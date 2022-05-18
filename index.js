@@ -7,12 +7,12 @@ $(function () {
         var reasons = $('textarea[name="reasons"]').val();
         var name = $('input[name="name"]').val();
         var furigana = $('input[name="furigana"]').val();
-        var name = $('input[name="name"]').val();
-        var name = $('input[name="name"]').val();
+        var email = $('input[name="email"]').val();
+        var tel = $('input[name="tel"]').val();
         // var tool = $('input[name="tool"]').val();
         
         //var msg = `${key}\n朝礼/終礼不参加の理由：${reasons}\n返信期限：${date}\n使用ツール：${tool}`;
-        var msg = ``${key}\n求人内容：\n${reasons}`;
+        var msg = ``求人内容：\n${name}\n${furigana}\n${email}\n${tel}`;
                
         sendText(msg);
 
